@@ -94,6 +94,7 @@ void freelist(linkedlist* list){
     free(list -> head);
     list -> head = temp;
   }
+  free(list);
 }
 
 void printall(linkedlist* list){
